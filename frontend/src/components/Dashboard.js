@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ItemTable from './ItemTable';
 import './Dashboard.css';
-import axios from 'axios';
+import api from '../api.js';
 
 export default function Dashboard() {
   const [items, setItems] = useState([]);
@@ -20,7 +20,7 @@ export default function Dashboard() {
 
   const fetchItems = async () => {
     try {
-      const res = await axios.get('/api/items', {
+      const res = await api.get('/api/items', {
         headers: { Authorization: `Bearer ${token}` },
       });
       // Show newest at bottom
@@ -37,12 +37,12 @@ export default function Dashboard() {
     setMsg('');
     try {
       if (editId) {
-        await axios.put(`/api/items/${editId}`, form, {
+        await api.put(`/api/items/${editId}`, form, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setMsg('Item updated!');
       } else {
-        await axios.post('/api/items', form, {
+        await api.post('/api/items', form, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setMsg('Item added!');
@@ -69,7 +69,7 @@ export default function Dashboard() {
   const handleDelete = async id => {
     if (!window.confirm('Delete this item?')) return;
     try {
-      await axios.delete(`/api/items/${id}`, {
+      await api.delete(`/api/items/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setMsg('Item deleted!');

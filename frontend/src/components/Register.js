@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import axios from 'axios';
+import api from '../api.js';
 import './Register.css';
 
 export default function Register() {
@@ -14,7 +14,7 @@ export default function Register() {
     e.preventDefault();
     setMsg('');
     try {
-      const res = await axios.post('/api/auth/register', form);
+      const res = await api.post('/api/auth/register', form);
       setMsg('Registration successful! Please login.');
       setTimeout(() => navigate('/login'), 1200);
     } catch (err) {

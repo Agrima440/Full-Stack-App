@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import axios from 'axios';
+import api from '../api.js';
 import './Login.css';
 
 export default function Login() {
@@ -13,7 +13,7 @@ export default function Login() {
     e.preventDefault();
     setMsg('');
     try {
-      const res = await axios.post('/api/auth/login', { email, password });
+      const res = await api.post('/api/auth/login', { email, password });
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user', JSON.stringify(res.data.user));
       navigate('/dashboard');

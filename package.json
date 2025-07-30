@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "cd backend && nodemon server.js",
     "client": "cd frontend && npm start",
-    "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\""
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\"",
+    "build": "cd frontend && npm install && npm run build",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
   },
   "keywords": [],
   "author": "",
