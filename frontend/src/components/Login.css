@@ -1,0 +1,96 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #eae0f1 0%, #eee8f3 100%);
+  }
+  
+  .login-card {
+    background: rgba(255,255,255,0.85);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    padding: 40px 32px 32px 32px;
+    /* background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); */
+
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-avatar {
+    background: #4e8cff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(78,140,255,0.2);
+  }
+  
+  .login-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 35px;
+    color: #333;
+    letter-spacing: 2px;
+  }
+  
+  .login-form label {
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    background: #f7faff;
+    transition: border 0.2s;
+  }
+  
+  .login-form input:focus {
+    border: 1.5px solid #4e8cff;
+    outline: none;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px 0;
+    background: linear-gradient(90deg, #4e8cff 0%, #38b6ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+  }
+  
+  .login-btn:hover {
+    background: linear-gradient(90deg, #38b6ff 0%, #4e8cff 100%);
+  }
+  
+  .login-footer {
+    margin-top: 18px;
+    font-size: 0.95rem;
+    color: #888;
+    text-align: center;
+  }
+  
+  .login-error {
+    color: #c62828;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+  }

@@ -1,0 +1,90 @@
+.dashboard-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+    padding: 40px 0;
+  }
+  
+  .dashboard-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(80,80,180,0.13);
+    margin: 0 auto;
+    padding: 32px 28px;
+    max-width: 900px;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .logout-btn {
+    background: #ffebee;
+    color: #c62828;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 16px;
+    transition: background 0.2s;
+  }
+  
+  .logout-btn:hover {
+    background: #ffcdd2;
+  }
+  
+  .item-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .item-form input {
+    flex: 1 1 180px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    background: #f7faff;
+    transition: border 0.2s;
+  }
+  
+  .item-form input:focus {
+    border: 1.5px solid #4e8cff;
+    outline: none;
+  }
+  
+  .item-btn {
+    padding: 10px 24px;
+    background: linear-gradient(90deg, #4e8cff 0%, #38b6ff 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .item-btn:hover {
+    background: linear-gradient(90deg, #38b6ff 0%, #4e8cff 100%);
+  }
+  
+  .dashboard-msg {
+    color: #00796b;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 500;
+  }

@@ -1,0 +1,49 @@
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+  }
+  
+  .item-table th, .item-table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+  }
+  
+  .item-table th {
+    background: #f3f6fb;
+    color: #4e8cff;
+    font-weight: 700;
+  }
+  
+  .item-table tr:hover {
+    background: #f7faff;
+  }
+  
+  .action-btn {
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    margin: 0 4px;
+    font-size: 0.98rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .action-btn.edit {
+    background: #e0f7fa;
+    color: #00796b;
+  }
+  
+  .action-btn.delete {
+    background: #ffebee;
+    color: #c62828;
+  }
+  
+  .action-btn.edit:hover {
+    background: #b2ebf2;
+  }
+  
+  .action-btn.delete:hover {
+    background: #ffcdd2;
+  }

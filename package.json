@@ -1,0 +1,18 @@
+{
+  "name": "fullstack-app",
+  "version": "1.0.0",
+  "description": "## Overview A full stack web application with secure authentication (JWT), user registration/login, and CRUD operations on items (with first name, last name, email, phone number). Built with React, Node.js, Express, and MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd backend && nodemon server.js",
+    "client": "cd frontend && npm start",
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
